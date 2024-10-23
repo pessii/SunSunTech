@@ -3,10 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminRegisterController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('top');
 });
 
 Route::get('/dashboard', function () {
