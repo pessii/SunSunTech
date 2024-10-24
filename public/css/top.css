@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,131 +8,156 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background: #ffffff;
-    padding: 16px;
+    background: #efefef;
+    padding: 16px 10% 16px 10%;
 }
 
 /* ヘッダー内のコンテナ */
-.header-container {
-    display: flex;
-    justify-content: space-between; /* 左右の要素を分散 */
-    width: 100%;
-}
+    .header-container {
+        display: flex;
+        justify-content: space-between; /* 左右の要素を分散 */
+        width: 100%;
+    }
 
 /* サイトタイトルのスタイル */
-.site-title {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
+    .site-title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+/* ナビゲーション */
+    nav {
+        margin-top: 16px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex; /* フレックスボックスを使用 */
+        justify-content: center; /* 中央揃え */
+        font-weight: bold;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.2vw;
+        color: #333;
+    }
 
-nav {
-    margin-top: 16px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.hero {
-    background: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    background: #f0666c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.products {
-    padding: 20px;
-}
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.product-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 30%;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    .hero {
+        background: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        background: #f0666c;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .products {
+        background: #efefef;
+        padding: 20px 10% 20px 10%;
+    }
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .product-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        width: 30%;
+        text-align: center;
+    }
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
 
 /* 検索フォーム */
-.search-form {
-    margin: 0 20px; /* 左右のマージンを追加 */
-}
-
-.search-form form {
-    display: flex; /* フォーム内の要素をフレックスボックスで配置 */
-}
-
-.search-form input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px; /* ボタンとの間に隙間を作る */
-    width: 250px; /* お好みの横幅を指定 */
-}
-
-.search-form button {
-    padding: 8px 12px;
-    background-color: #f0666c; /* ボタンの背景色 */
-    color: #f8f8f8; /* ボタンのテキスト色 */
-    border: none; /* ボーダーを削除 */
-    border-radius: 4px; /* 角を丸くする */
-    cursor: pointer; /* ポインターを表示 */
-}
-
-.search-form button:hover {
-    background-color: #f0666c; /* ホバー時の背景色 */
-}
+    .search-form {
+        margin: 0 20px; /* 左右のマージンを追加 */
+    }
+    .search-form form {
+        display: flex; /* フォーム内の要素をフレックスボックスで配置 */
+    }
+    .input-wrapper {
+        position: relative; /* アイコンの配置用にラッパーを相対位置に設定 */
+        width: 250px; /* 検索窓の幅を指定 */
+    }
+    .search-form input[type="text"] {
+        padding: 8px 8px 8px 30px; /* 左側にアイコン分のスペースを確保 */
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        width: 100%; /* ボックスの横幅いっぱい */
+    }
+    .search-icon {
+        position: absolute; /* アイコンを絶対位置に */
+        top: 50%; /* 垂直方向に中央揃え */
+        left: 8px; /* 左端からの距離 */
+        transform: translateY(-50%); /* アイコンを中央揃えに */
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        color: #c9c9c9;
+        font-size: 18px;
+    }
+    .search-icon::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0.7em;
+        height: 0.7em;
+        box-sizing: border-box;
+        border: 0.15em solid currentColor;
+        border-radius: 50%;
+        background-color: #fff;
+        content: "";
+    }
+    .search-icon::after {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        z-index: -1;
+        transform: rotate(-45deg);
+        width: 0.15em;
+        height: 1em;
+        box-sizing: border-box;
+        background-color: currentColor;
+        content: "";
+    }
+    .search-form button {
+        padding: 8px 12px;
+        color: #3d1818; /* ボタンのテキスト色 */
+        border: none; /* ボーダーを削除 */
+        border-radius: 4px; /* 角を丸くする */
+        cursor: pointer; /* ポインターを表示 */
+    }
 
 /* ドロップダウンボタンのスタイル */
-.dropdown-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 150px;
-}
-
-.dropdown-icon {
-    margin-left: 8px;
-}
+    .dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #efefef;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .mr {
+        padding-left: 15px;
+    }
 
 /* ドロップダウンメニューのスタイル */
 .dropdown-content {

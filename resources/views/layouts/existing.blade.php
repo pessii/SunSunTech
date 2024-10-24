@@ -17,8 +17,11 @@
                     <!-- 検索フォーム -->
                     <div class="search-form">
                         <form action=" " method="GET">
-                            <input type="text" name="query" placeholder="すべてのアイテムから探す" required>
-                            <button type="submit">検索</button>
+                            <div class="input-wrapper">
+                                <span class="search-icon"></span>
+                                <input type="text" name="query" placeholder="すべてのアイテムから探す" required>
+                            </div>
+                            <button type="submit"></button>
                         </form>
                     </div>
 
@@ -26,8 +29,7 @@
                     <div class="dropdown">
                         <div>
                             <button id="dropdownButton" class="dropdown-btn">
-                                <div>{{ Auth::user()->name }}</div>
-                                <div class="dropdown-icon">▼</div>
+                                <div>{{ Auth::user()->name }}<span class="mr">様</span></div>
                             </button>
                         </div>
 
@@ -37,6 +39,8 @@
                             </a>
 
                             <a>お気に入り</a>
+
+                            <a>閲覧履歴</a>
 
                             <!-- ログアウト -->
                             <form method="POST" action="{{ route('logout') }}" id="logoutForm">
@@ -75,7 +79,7 @@
                 <li><a href="#">カテゴリーからを探す</a></li>
                 <li><a href="#">セール商品</a></li>
                 <li><a href="#">お気に入り</a></li>
-                <li><a href="#">履歴</a></li>
+                <li><a href="#">閲覧履歴</a></li>
                 <li><a href="#">よくある質問</a></li>
                 <li><a href="#">お問い合わせ</a></li>
             </ul>
