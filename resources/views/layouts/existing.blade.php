@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コスメナビ</title>
     <link rel="stylesheet" href="{{ asset('css/top.css') }}">
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js'])
 </head>
 <body>
     <header>

@@ -12,20 +12,26 @@ header {
     padding: 16px 10% 16px 10%;
 }
 
-/* ヘッダー内のコンテナ */
+/* -----------------
+ヘッダー内のコンテナ
+----------------- */
     .header-container {
         display: flex;
         justify-content: space-between; /* 左右の要素を分散 */
         width: 100%;
     }
 
-/* サイトタイトルのスタイル */
+/* -----------------
+サイトタイトルのスタイル
+----------------- */
     .site-title {
         margin: 0;
         font-size: 24px;
         font-weight: bold;
     }
-/* ナビゲーション */
+/* -----------------
+ナビゲーション
+----------------- */
     nav {
         margin-top: 16px;
     }
@@ -85,7 +91,9 @@ header {
         width: 100%;
     }
 
-/* 検索フォーム */
+/* -----------------
+検索フォーム
+----------------- */
     .search-form {
         margin: 0 20px; /* 左右のマージンを追加 */
     }
@@ -145,7 +153,9 @@ header {
         cursor: pointer; /* ポインターを表示 */
     }
 
-/* ドロップダウンボタンのスタイル */
+/* -----------------
+ドロップダウンボタンのスタイル
+----------------- */
     .dropdown-btn {
         display: flex;
         justify-content: space-between;
@@ -159,121 +169,107 @@ header {
         padding-left: 15px;
     }
 
-/* ドロップダウンメニューのスタイル */
-.dropdown-content {
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
+/* -----------------
+ドロップダウンメニューのスタイル
+----------------- */
+    .dropdown-content {
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: black;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .hidden {
+        display: none;
+    }
 
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    color: black;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.hidden {
-    display: none;
-}
-
-
-/* スライドショー */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-}
-
-.slides {
-    display: none; /* 初期状態では全て非表示 */
-    position: relative;
-    overflow: hidden; /* オーバーフローを隠す */
-}
-
-.slides img {
-    width: 100%; /* 画像をコンテナにフィット */
-    height: 300px; /* 縦サイズを調整 */
-    object-fit: cover; /* 画像のアスペクト比を保持 */
-}
-
-.slide-content {
-    position: absolute;
-    top: 60%; /* 上からの位置を調整 */
-    left: 50%;
-    width: 100%; /* 横幅を100%に設定 */
-    transform: translate(-50%); /* 中央に配置 */
-    color: white; /* テキストの色 */
-    text-align: center;
-    z-index: 2; /* 画像の上に表示 */
-    background-color: rgba(0, 0, 0, 0.5); /* 背景色を設定して、半透明に */
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 70%;
-    width: 10%;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center; /* テキストを中央に配置 */
-    transition: 0.6s ease;
-    user-select: none;
-    z-index: 3; /* 画像の上に表示 */
-}
-
-.prev {
-    left: 0; /* 左側に配置 */
-}
-
-.next {
-    right: 0; /* 右側に配置 */
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.dot-container {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-.fade {
-    animation: fade 1s ease; /* なめらかにスライドする */
-}
-
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+/* -----------------
+スライドショー 
+----------------- */
+    .sliderArea {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 30px 25px 10px;
+        overflow: hidden;
+    }
+    .sliderArea.w300 {
+        max-width: 300px;
+    }
+    .slick-slide {
+        margin: 0 15px;
+        position: relative;
+    }
+    .slick-slide img {
+        width: 100%;
+        height: 38vh !important;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); /* 影の設定 */
+        border-radius: 15px; /* 角を15px丸くする */
+        object-fit: cover; /* 画像を全体にフィットさせる */
+    }
+    .slick-prev, .slick-next {
+        z-index: 1;
+        right: 0 !important;
+    }
+    .slick-prev:before, .slick-next:before {
+        color: #000000 !important;
+        font-size: 35px !important;
+    }
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        /* opacity: .2; */
+    }
+    .slick-active {
+        opacity: 1;
+    }
+    .slick-current {
+        opacity: 1;
+    }
+    .thumb {
+        margin: 20px 0 0;
+    }
+    .thumb .slick-slide {
+        cursor: pointer;
+    }
+    .thumb .slick-slide:hover {
+        opacity: .7;
+    }
+    .full-screen.slider {
+        margin: 0 auto;
+    }
+    /* テキストのコンテナを画像の上に配置 */
+    .slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        text-align: left;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 15px; /* 角を15px丸くする */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+    /* テキストのスタイル */
+    .slide-content h2 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .slide-content p {
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+    .mrdium-screen {
+        display: block !important;
+    }

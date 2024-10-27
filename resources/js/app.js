@@ -3,16 +3,26 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css'; // スタイルシートのインポート
 import 'slick-carousel/slick/slick-theme.css'; // テーマのインポート
 
-$(document).ready(function(){
-    $('.container').slick({
-        // Slickのオプションをここに設定
-        autoplay: true,
-        dots: true,
-    });
-});
-
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;
 
 Alpine.start();
+
+/** -----------------
+topスライドショー
+----------------- **/
+$(document).ready(function() {
+    console.log("jQuery is ready."); // デバッグメッセージ
+    $(".full-screen").slick({
+        centerMode: true,
+        centerPadding: '1%',
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+});

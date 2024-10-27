@@ -1,54 +1,45 @@
 @extends('layouts.existing')
 
 @section('content')
-    <section class="hero">
+    <div class="sliderArea">
         <!-- スライドショー -->
-        <div class="slideshow-container">
+        <div class="full-screen slider">
 
-            <div class="slides fade">
+            <div class="mrdium-screen">
+                <img src="{{ asset('images/suraid1.jpeg') }}" alt="商品1">
                 <div class="slide-content">
                     <h2>クリスマスコレクション２０２４</h2>
                     <p>限定メイクアップアイテム</p>
                 </div>
-                <img src="{{ asset('images/suraid1.jpeg') }}" alt="商品1">
             </div>
 
-            <div class="slides fade">
+            <div class="mrdium-screen">
+                <img src="{{ asset('images/suraid2.jpeg') }}" alt="商品2">
                 <div class="slide-content">
                     <h2>２０２４ホリデーコレクション開催</h2>
                     <p>豪華なコフレが勢揃い</p>
                 </div>
-                <img src="{{ asset('images/suraid2.jpeg') }}" alt="商品2">
             </div>
 
-            <div class="slides fade">
+            <div class="mrdium-screen">
+                <img src="{{ asset('images/suraid3.jpeg') }}" alt="商品3">
                 <div class="slide-content">
                     <h2>２０２４秋の新作コスメ</h2>
                     <p>人気ブランドから続々登場！</p>
                 </div>
-                <img src="{{ asset('images/suraid3.jpeg') }}" alt="商品3">
             </div>
 
-            <div class="slides fade">
+            <div class="mrdium-screen">
+                <img src="{{ asset('images/suraid4.jpeg') }}" alt="商品4">
                 <div class="slide-content">
                     <h2>香りも楽しむハンド・ネイルケア</h2>
                     <p>感想が気になる季節に向けて　香水替わりにも</p>
                 </div>
-                <img src="{{ asset('images/suraid4.jpeg') }}" alt="商品4">
             </div>
 
-            <!-- 前へ・次へボタン -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-    </section>
+    </div>
     
     <section class="products">
         <h2>おすすめ商品</h2>
