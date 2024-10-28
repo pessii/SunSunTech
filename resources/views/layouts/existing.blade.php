@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コスメナビ</title>
+    <title>CosmeticNavi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/top.css') }}">
     @vite(['resources/js/app.js'])
 </head>
@@ -13,7 +14,7 @@
             @if (Route::has('login'))
                 @auth
                 <!-- ログイン時の処理 -->
-                    <h1 class="site-title">コスメナビ</h1>
+                    <h1 class="site-title">CosmeticNavi</h1>
 
                     <!-- 検索フォーム -->
                     <div class="search-form">
@@ -76,13 +77,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">アイテムを探す</a></li>
-                <li><a href="#">カテゴリーからを探す</a></li>
                 <li><a href="#">セール商品</a></li>
+                <li><a href="#">ブランド商品</a></li>
+                <li><a href="#">アイテム</a></li>
+                <li><a href="#">カテゴリー</a></li>
                 <li><a href="#">お気に入り</a></li>
                 <li><a href="#">閲覧履歴</a></li>
                 <li><a href="#">よくある質問</a></li>
-                <li><a href="#">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>

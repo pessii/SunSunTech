@@ -26,3 +26,14 @@ $(document).ready(function() {
         slidesToScroll: 3
     });
 });
+
+/** -----------------
+商品一覧スライドショー
+----------------- **/
+$('.js-slick').slick({
+    autoplay: false,
+    arrows: true,
+    dots: false,
+    infinite: false,
+    slidesToShow: 5,
+  });

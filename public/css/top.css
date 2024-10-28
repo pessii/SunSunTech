@@ -57,14 +57,6 @@ header {
         padding: 20px;
         text-align: center;
     }
-    .btn {
-        display: inline-block;
-        background: #f0666c;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
     .products {
         background: #efefef;
         padding: 20px 10% 20px 10%;
@@ -220,7 +212,7 @@ header {
     }
     .slick-prev, .slick-next {
         z-index: 1;
-        right: 0 !important;
+        right: -5px !important;
     }
     .slick-prev:before, .slick-next:before {
         color: #000000 !important;
@@ -273,3 +265,50 @@ header {
     .mrdium-screen {
         display: block !important;
     }
+
+/* -----------------
+商品一覧
+----------------- */
+
+    /* おすすめ商品 */
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .inner{
+        width: calc(100% - 100px);
+        max-width: 800px;
+    }
+    .slide{
+        width: 160px !important;
+        background-color: #ffffff;
+    }
+    .slide img{
+        width: 160px;
+        height: 200px !important;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* 影の設定 */
+    }
+    .product-info{
+        width: 160px;
+        height: 200px;
+        padding: 5px;
+    }
+    .product-info p{
+        font-size: 14px;
+    }
+    .product-price{
+        color: #f0666c;
+        font-weight: bold;
+        font-size: 18px !important;
+    }
+    .btn {
+        display: inline-block;
+        background: #f0666c;
+        color: white;
+        padding: 6px 13px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    
