@@ -9,16 +9,25 @@ header {
     display: flex;
     flex-direction: column;
     background: #efefef;
-    padding: 16px 10% 16px 10%;
+    padding: 0 10% 16px 10%;
 }
 
 /* -----------------
 ヘッダー内のコンテナ
 ----------------- */
     .header-container {
+        position: fixed;
+        left: 0;
+        right: 0;
         display: flex;
         justify-content: space-between; /* 左右の要素を分散 */
-        width: 100%;
+        background: #efefef;
+        padding: 16px 10%;
+        z-index: 10;
+        transition: box-shadow 0.3s ease; /* 影がつくときのスムーズな移動 */
+    }
+    .header-container.shadow {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
 /* -----------------
@@ -33,7 +42,7 @@ header {
 ナビゲーション
 ----------------- */
     nav {
-        margin-top: 16px;
+        margin-top: 70px;
     }
     nav ul {
         list-style-type: none;
@@ -57,10 +66,6 @@ header {
         padding: 20px;
         text-align: center;
     }
-    .products {
-        background: #efefef;
-        padding: 20px 10% 20px 10%;
-    }
     .product-list {
         display: flex;
         flex-wrap: wrap;
@@ -72,15 +77,6 @@ header {
         margin: 10px;
         width: 30%;
         text-align: center;
-    }
-    footer {
-        background: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 0;
-        position: relative;
-        bottom: 0;
-        width: 100%;
     }
 
 /* -----------------
@@ -267,6 +263,27 @@ header {
     }
 
 /* -----------------
+サイドバー 
+----------------- */
+    .side {
+        width: 20%;
+        margin-left: 10px; /*サイドバーとメインコンテンツの間に隙間*/
+        margin-top: 4.5em;
+    } 
+    .main {
+        width: 80%;
+    }
+    article {
+        background: #f6f6f6;
+        padding: 20px 10% 20px 10%;
+        display: flex; /*サイドバーとメインコンテンツを横並びにする*/
+    }
+    .adsense img{
+        max-width: 100%; /* サイドバーの幅に合わせて画像を調整 */
+        height: auto;
+    }
+
+/* -----------------
 商品一覧
 ----------------- */
 
@@ -312,3 +329,36 @@ header {
         font-size: 12px;
     }
     
+/* -----------------
+フッター
+----------------- */ 
+    footer {
+        background: #efefef;
+        color: rgb(164, 164, 164);
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    .footer-menu {
+        height: 60px;
+    }
+    .footer-menu-list {
+        list-style: none;
+        text-align: center;
+        line-height: 60px;
+    }
+    .footer-menu-list li {
+        margin: 10px;
+        display: inline;
+    }
+    .footer-menu-list li a {
+        font-size: 1.6vh;
+        color: rgb(164, 164, 164);
+        text-decoration: none;
+    }
+    .copyright {
+        font-size: 1.6vh;
+        text-align: center;
+    }

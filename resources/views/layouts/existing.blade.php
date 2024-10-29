@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CosmeticNavi</title>
+    <title>コスメ通販サイト CosmeNavi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/top.css') }}">
     @vite(['resources/js/app.js'])
@@ -14,7 +14,7 @@
             @if (Route::has('login'))
                 @auth
                 <!-- ログイン時の処理 -->
-                    <h1 class="site-title">CosmeticNavi</h1>
+                    <h1 class="site-title">CosmeNavi</h1>
 
                     <!-- 検索フォーム -->
                     <div class="search-form">
@@ -93,7 +93,18 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 コスメナビ. All rights reserved.</p>
+
+        <div class="footer-menu">
+            <ul class="footer-menu-list">
+                <li><a href="#">利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 CosmeNavi. All rights reserved.</p>
+        </div>
+
     </footer>
 
     <script src="{{ asset('js/top.js') }}"></script>
