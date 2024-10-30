@@ -1,20 +1,55 @@
+/* -----------------
+ドロップダウンメニュー
+----------------- */
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownButton = document.getElementById('dropdownButton');
     const dropdownMenu = document.getElementById('dropdownMenu');
+    const categoriesDropdownButton = document.getElementById('categoriesDropdownButton');
+    const categoriesDropdownMenu = document.getElementById('categoriesDropdownMenu');
 
+    // 名前のドロップダウンのクリックイベント
     dropdownButton.addEventListener('click', function () {
         dropdownMenu.classList.toggle('hidden');
     });
 
-    // 画面の他の部分をクリックするとメニューを閉じる
+    // カテゴリードロップダウンのクリックイベント
+    categoriesDropdownButton.addEventListener('click', function () {
+        categoriesDropdownMenu.classList.toggle('categories-hidden');
+    });
+
+    // 他の部分をクリックするとドロップダウンを閉じる
     document.addEventListener('click', function (e) {
         if (!dropdownButton.contains(e.target)) {
             dropdownMenu.classList.add('hidden');
         }
+        if (!categoriesDropdownButton.contains(e.target)) {
+            categoriesDropdownMenu.classList.add('categories-hidden');
+        }
     });
-
 });
 
+// 名前のドロップダウンを表示・非表示
+function showNameDropdown() {
+    document.getElementById("dropdownMenu").classList.remove("hidden");
+}
+
+function hideNameDropdown() {
+    document.getElementById("dropdownMenu").classList.add("hidden");
+}
+
+// カテゴリードロップダウンを表示・非表示
+function showCategoriesDropdown() {
+    document.getElementById("categoriesDropdownMenu").classList.remove("categories-hidden");
+}
+
+function hideCategoriesDropdown() {
+    document.getElementById("categoriesDropdownMenu").classList.add("categories-hidden");
+}
+
+
+/* -----------------
+ヘッダー行をスクロール
+----------------- */
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header-container');
     if (window.scrollY > 0) {

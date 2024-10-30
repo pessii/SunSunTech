@@ -28,7 +28,7 @@
                     </div>
 
                     <!-- ドロップダウン -->
-                    <div class="dropdown">
+                    <div class="dropdown" onmouseover="showNameDropdown()" onmouseout="hideNameDropdown()">
                         <div>
                             <button id="dropdownButton" class="dropdown-btn">
                                 <div>{{ Auth::user()->name }}<span class="mr">様</span></div>
@@ -39,9 +39,7 @@
                             <a href="{{ route('profile.edit') }}" class="dropdown-link">
                                 {{ __('マイページ') }}
                             </a>
-
                             <a>お気に入り</a>
-
                             <a>閲覧履歴</a>
 
                             <!-- ログアウト -->
@@ -78,9 +76,24 @@
         <nav>
             <ul>
                 <li><a href="#">セール商品</a></li>
+                <li><a href="#">お悩みから探す</a></li>
+                <li class="dropdown" onmouseover="showCategoriesDropdown()" onmouseout="hideCategoriesDropdown()">
+                    <a href="#" id="categoriesDropdownButton" class="categories-dropdown-btn">カテゴリー</a>
+                    <ul id="categoriesDropdownMenu" class="categories-dropdown-content categories-hidden">
+                        <li><a href="#">スキンケア</a></li>
+                        <li><a href="#">ベースメイク</a></li>
+                        <li><a href="#">メイクアップ</a></li>
+                        <li><a href="#">メイクアップアイテム</a></li>
+                        <li><a href="#">ボディケア</a></li>
+                        <li><a href="#">ネイル・ネイルケア</a></li>
+                        <li><a href="#">ヘアケア</a></li>
+                        <li><a href="#">フレグランス</a></li>
+                        <li><a href="#">コフレ・雑貨</a></li>
+                        <li><a href="#">ビューティーグッズ</a></li>
+                        <li><a href="#">こだわり条件</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">ブランド商品</a></li>
-                <li><a href="#">アイテム</a></li>
-                <li><a href="#">カテゴリー</a></li>
                 <li><a href="#">お気に入り</a></li>
                 <li><a href="#">閲覧履歴</a></li>
                 <li><a href="#">よくある質問</a></li>
