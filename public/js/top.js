@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 function showNameDropdown() {
     document.getElementById("dropdownMenu").classList.remove("hidden");
 }
-
 function hideNameDropdown() {
     document.getElementById("dropdownMenu").classList.add("hidden");
 }
@@ -41,9 +40,16 @@ function hideNameDropdown() {
 function showCategoriesDropdown() {
     document.getElementById("categoriesDropdownMenu").classList.remove("categories-hidden");
 }
-
 function hideCategoriesDropdown() {
     document.getElementById("categoriesDropdownMenu").classList.add("categories-hidden");
+}
+
+// サブカテゴリーメニューを表示・非表示
+function showSubDropdown(menuId) {
+    document.getElementById(menuId).classList.add('show');
+}
+function hideSubDropdown(menuId) {
+    document.getElementById(menuId).classList.remove('show');
 }
 
 

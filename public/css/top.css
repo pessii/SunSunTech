@@ -227,6 +227,40 @@ header {
         display: none;
     }
 
+    /* -----------------
+    カテゴリードロップダウンメニューのサブカテゴリーメニュー
+    ----------------- */
+    .category-item {
+        position: relative;
+    }
+    .sub-dropdown {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        min-width: 500px; /* 3列分の幅を確保 */
+        display: none;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .sub-dropdown.show {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3列のグリッドを作成 */
+        gap: 10px; /* 項目間の間隔 */
+    }
+    .sub-dropdown li {
+        margin: 4px;
+        padding: 1px;
+    }
+    .sub-dropdown li a {
+        white-space: nowrap; /* テキストを1行に保つ */
+        display: block;
+        padding: 4px;
+        font-size: 12px;
+    }
+
 /* -----------------
 スライドショー 
 ----------------- */
