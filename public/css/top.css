@@ -213,6 +213,7 @@ header {
         flex-direction: column;
         border-radius: 8px;
         margin-top: 0;
+        height: 550px;
     }
     .categories-dropdown-content a {
         padding: 12px 16px;
@@ -231,7 +232,7 @@ header {
     カテゴリードロップダウンメニューのサブカテゴリーメニュー
     ----------------- */
     .category-item {
-        position: relative;
+        position: static;
     }
     .sub-dropdown {
         position: absolute;
@@ -243,19 +244,23 @@ header {
         min-width: 500px; /* 3列分の幅を確保 */
         display: none;
         padding: 15px;
-        border-radius: 8px;
+        border-radius: 0 8px 8px 0;
+        height: 519px;
+        margin-left: -20px;
     }
     .sub-dropdown.show {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3列のグリッドを作成 */
-        gap: 10px; /* 項目間の間隔 */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: flex-start;
     }
     .sub-dropdown li {
         margin: 4px;
         padding: 1px;
+        width: calc(30%);
     }
     .sub-dropdown li a {
-        white-space: nowrap; /* テキストを1行に保つ */
         display: block;
         padding: 4px;
         font-size: 12px;
