@@ -76,7 +76,133 @@
         <nav>
             <ul>
                 <li><a href="#">セール商品</a></li>
-                <li><a href="#">お悩みから探す</a></li>
+
+                <li class="dropdown" onmouseover="showConcernsDropdown()" onmouseout="hideConcernsDropdown()">
+                    <a href="#" id="concernsDropdownButton" class="concerns-dropdown-btn">お悩みから探す</a>
+                    <ul id="concernsDropdownMenu" class="categories-dropdown-content categories-hidden">
+                        <!-- スキンケア -->
+                        <li class="category-item" onmouseover="showSubDropdown('skincareConcernsMenu')" onmouseout="hideSubDropdown('skincareConcernsMenu')">
+                            <a href="#">スキンケア</a>
+                            <ul id="skincareConcernsMenu" class="sub-dropdown hidden">
+                                <li><a href="#">うるおい</a></li>
+                                <li><a href="#">毛穴</a></li>
+                                <li><a href="#">ニキビ</a></li>
+                                <li><a href="#">シミ・そばかす</a></li>
+                                <li><a href="#">低刺激・敏感肌</a></li>
+                                <li><a href="#">たるみ</a></li>
+                                <li><a href="#">赤み・赤ら顔</a></li>
+                                <li><a href="#">UVカットコスメ</a></li>
+                                <li><a href="#">角質ケア</a></li>
+                                <li><a href="#">顔のテカリ</a></li>
+                                <li><a href="#">引き締め</a></li>
+                                <li><a href="#">唇の荒れ・乾燥</a></li>
+                                <li><a href="#">よく落ちる</a></li>
+                                <li><a href="#">目のクマ</a></li>
+                            </ul>
+                        </li>
+                        <!-- ベースメイク -->
+                        <li class="category-item" onmouseover="showSubDropdown('baseMakeConcernsMenu')" onmouseout="hideSubDropdown('baseMakeConcernsMenu')">
+                            <a href="#">ベースメイク</a>
+                            <ul id="baseMakeConcernsMenu" class="sub-dropdown hidden">
+                                
+                            </ul>
+                        </li>
+                        <!-- メイクアップ -->
+                        <li class="category-item" onmouseover="showSubDropdown('makeupConcernsMenu')" onmouseout="hideSubDropdown('makeupConcernsMenu')">
+                            <a href="#">メイクアップ</a>
+                            <ul id="makeupConcernsMenu" class="sub-dropdown hidden">
+                                <li><a href="#">色持ちがよい</a></li>
+                                <li><a href="#">お湯で落ちるマスカラ</a></li>
+                                <li><a href="#">描きやすい</a></li>
+                                <li><a href="#">発色がよい</a></li>
+                                <li><a href="#">ダマにならない</a></li>
+                                <li><a href="#">カール・ハリ(マスカラ)</a></li>
+                                <li><a href="#">ボリューム(マスカラ)</a></li>
+                                <li><a href="#">ロング(マスカラ)</a></li>
+                                <li><a href="#">セパレート(マスカラ)</a></li>
+                                <li><a href="#">にじみにくい</a></li>
+                            </ul>
+                        </li>
+                        <!-- メイクアップアイテム -->
+                        <li class="category-item" onmouseover="showSubDropdown('makeupItemsConcernsMenu')" onmouseout="hideSubDropdown('makeupItemsConcernsMenu')">
+                            <a href="#">メイクアップアイテム</a>
+                            <ul id="makeupItemsConcernsMenu" class="sub-dropdown hidden">
+
+                            </ul>
+                        </li>
+                        <!-- ボディケア -->
+                        <li class="category-item" onmouseover="showSubDropdown('bodyConcernsMenu')" onmouseout="hideSubDropdown('bodyConcernsMenu')">
+                            <a href="#">ボディケア</a>
+                            <ul id="bodyConcernsMenu" class="sub-dropdown hidden">
+                                <li><a href="#">ホワイトニング(ボディ)</a></li>
+                                <li><a href="#">角質ケア(ボディ)</a></li>
+                                <li><a href="#">乾燥(ボディ)</a></li>
+                                <li><a href="#">疲れ・コリ</a></li>
+                                <li><a href="#">バストケア・ネックケア</a></li>
+                                <li><a href="#">老廃物の排出・代謝</a></li>
+                                <li><a href="#">むくみ・冷え</a></li>
+                                <li><a href="#">スリミング・ボディライン</a></li>
+                                <li><a href="#">汗・におい</a></li>
+                                <li><a href="#">ムダ毛除去</a></li>
+                                <li><a href="#">ストレッチマーク・妊娠線</a></li>
+                                <li><a href="#">歯のホワイトニング</a></li>
+                                <li><a href="#">口臭対策・口臭予防</a></li>
+                                <li><a href="#">ささくれ・二枚爪</a></li>
+                                <li><a href="#">べたつかない(ボディ)</a></li>
+                            </ul>
+                        </li>
+                        <!-- ネイル・ネイルケア -->
+                        <li class="category-item" onmouseover="showSubDropdown('nailConcernsMenu')" onmouseout="hideSubDropdown('nailConcernsMenu')">
+                            <a href="#">ネイル・ネイルケア</a>
+                            <ul id="nailConcernsMenu" class="sub-dropdown hidden">
+                                
+                            </ul>
+                        </li>
+                        <!-- ヘアケア -->
+                        <li class="category-item" onmouseover="showSubDropdown('hairConcernsMenu')" onmouseout="hideSubDropdown('hairConcernsMenu')">
+                            <a href="#">ヘアケア</a>
+                            <ul id="hairConcernsMenu" class="sub-dropdown hidden">
+                                <li><a href="#">抜け毛予防</a></li>
+                                <li><a href="#">頭皮のエイジング</a></li>
+                                <li><a href="#">フケ・頭皮のかゆみ</a></li>
+                                <li><a href="#">カラーリングケア</a></li>
+                                <li><a href="#">トリートメント効果</a></li>
+                                <li><a href="#">さらさら</a></li>
+                                <li><a href="#">髪 しっとり</a></li>
+                                <li><a href="#">セットキープ力</a></li>
+                                <li><a href="#">ストレートヘア</a></li>
+                                <li><a href="#">ウェーブヘア</a></li>
+                                <li><a href="#">ボリュームダウン(ヘア)</a></li>
+                                <li><a href="#">ボリュームアップ(ヘア)</a></li>
+                            </ul>
+                        </li>
+                        <!-- フレグランス -->
+                        <li class="category-item" onmouseover="showSubDropdown('fragranceConcernsMenu')" onmouseout="hideSubDropdown('fragranceConcernsMenu')">
+                            <a href="#">フレグランス</a>
+                            <ul id="fragranceConcernsMenu" class="sub-dropdown hidden">
+                                
+                            </ul>
+                        </li>
+                        <!-- コフレ・雑貨 -->
+                        <li class="category-item" onmouseover="showSubDropdown('goodsConcernsMenu')" onmouseout="hideSubDropdown('goodsConcernsMenu')">
+                            <a href="#">コフレ・雑貨</a>
+                            <ul id="goodsConcernsMenu" class="sub-dropdown hidden">
+                                
+                            </ul>
+                        </li>
+                        <!-- ビューティーグッズ -->
+                        <li class="category-item" onmouseover="showSubDropdown('beautyConcernsMenu')" onmouseout="hideSubDropdown('beautyConcernsMenu')">
+                            <a href="#">ビューティーグッズ</a>
+                            <ul id="beautyConcernsMenu" class="sub-dropdown hidden">
+                                <li><a href="#">リラックス</a></li>
+                                <li><a href="#">アルコールフリー</a></li>
+                                <li><a href="#">オイルフリー</a></li>
+                                <li><a href="#">無香料</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="dropdown" onmouseover="showCategoriesDropdown()" onmouseout="hideCategoriesDropdown()">
                     <a href="#" id="categoriesDropdownButton" class="categories-dropdown-btn">カテゴリー</a>
                     <ul id="categoriesDropdownMenu" class="categories-dropdown-content categories-hidden">

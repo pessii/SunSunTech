@@ -53,6 +53,14 @@ function hideSubDropdown(menuId) {
 }
 
 
+function showConcernsDropdown() {
+    document.getElementById('concernsDropdownMenu').classList.remove('categories-hidden');
+}
+
+function hideConcernsDropdown() {
+    document.getElementById('concernsDropdownMenu').classList.add('categories-hidden');
+}
+
 /* -----------------
 ヘッダー行をスクロール
 ----------------- */
