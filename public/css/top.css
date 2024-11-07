@@ -83,7 +83,7 @@ header {
 検索フォーム
 ----------------- */
     .search-form {
-        margin: 0 20px; /* 左右のマージンを追加 */
+        margin-left: 100px;
     }
     .search-form form {
         display: flex; /* フォーム内の要素をフレックスボックスで配置 */
@@ -374,6 +374,7 @@ header {
     .wrapper{
         align-items: center;
         justify-content: center;
+        padding-top: 70px;
     }
     .inner{
         width: calc(100% - 100px);
@@ -445,3 +446,87 @@ header {
         font-size: 1.6vh;
         text-align: center;
     }
+
+/* -----------------
+すべて見るボタン
+----------------- */
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .section-header h2 {
+        margin: 0;
+    }
+    .view-all {
+        text-decoration: none;
+        color: #666;
+        font-size: 14px;
+    }
+    .view-all:hover {
+        text-decoration: underline;
+    }
+
+/* -----------------
+お気に入りボタン
+----------------- */
+    .fa-heart {
+        font-size: 18px;
+    }
+    .fa-clock {
+        font-size: 18px;
+    }
+    .favorite-icon {
+        margin-left: auto;  /* 右寄せにする */
+        margin-right: 20px; /* 右側の余白を追加（必要に応じて調整） */
+    }
+    .header-icons {
+        display: flex;
+        gap: 20px;  /* アイコン間の間隔 */
+    }
+    .icon-with-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+    .icon-with-text i {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;  /* アイコンと文字の間隔 */
+    }
+    .icon-with-text span {
+        font-size: 12px;  /* 文字サイズ */
+    }
+/* -----------------
+プルダウン
+----------------- */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 見出しとプルダウンの間隔 */
+}
+.price-filter {
+    display: inline-block;
+}
+.price-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    color: #666;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+}
+.price-select option {
+    color: #666;
+    font-weight: bold;
+}

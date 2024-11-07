@@ -27,6 +27,22 @@
                         </form>
                     </div>
 
+
+                    <div class="favorite-icon">
+                        <div class="header-icons">
+                            <!-- 閲覧履歴ボタン -->
+                            <div class="icon-with-text">
+                                <i class="far fa-clock"></i>
+                                <span>閲覧履歴</span>
+                            </div>
+                            <!-- お気に入りボタン -->
+                            <div class="icon-with-text">
+                                <i class="far fa-heart"></i>
+                                <span>お気に入り</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ドロップダウン -->
                     <div class="dropdown" onmouseover="showNameDropdown()" onmouseout="hideNameDropdown()">
                         <div>
@@ -254,7 +270,7 @@
                                 <li><a href="#">ネイル</a></li>
                             </ul>
                         </li>
-                        <!-- メイクアップアイテム -->
+                        <!-- メイクアップアイテ -->
                         <li class="category-item" onmouseover="showSubDropdown('makeupItemsDropdownMenu')" onmouseout="hideSubDropdown('makeupItemsDropdownMenu')">
                             <a href="#">メイクアップアイテム</a>
                             <ul id="makeupItemsDropdownMenu" class="sub-dropdown hidden">
@@ -370,20 +386,20 @@
                                 <li><a href="#">その他ビューティーグッズ</a></li>
                             </ul>
                         </li>
-                        <!-- こだわり条件 -->
-                        <li><a href="#">こだわり条件</a></li>
                     </ul>
                 </li>
+                <!-- ブランド商品 -->
                 <li><a href="#">ブランド商品</a></li>
-                <li><a href="#">お気に入り</a></li>
-                <li><a href="#">閲覧履歴</a></li>
+                <!-- こだわり条件 -->
+                <li><a href="#">こだわり条件</a></li>
+                <!-- よくある質問 -->
                 <li><a href="#">よくある質問</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        @yield('content') <!-- 子テンプレートのコンテンツがここに挿入される -->
+        @yield('content') <!-- 子テンプレートのコンテンツがここに挿入され -->
     </div>
 
     <footer>

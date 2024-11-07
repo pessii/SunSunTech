@@ -2,9 +2,12 @@
     <!---------------- 
         おすすめ商品 
     ---------------->
-    <h2>おすすめ商品</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>おすすめ商品</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -133,9 +136,33 @@
     <!---------------- 
         セール商品 
     ---------------->
-    <h2>セール商品</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>セール商品</h2>
+                    <div class="price-filter">
+                        <select name="price_range" class="price-select">
+                            <option value="">価格帯を選択</option>
+                            <option value="0-1000">〜1,000円</option>
+                            <option value="1000-2000">1,000円〜2,000円</option>
+                            <option value="2000-3000">2,000円〜3,000円</option>
+                            <option value="3000-4000">3,000円〜4,000円</option>
+                            <option value="4000-5000">4,000円〜5,000円</option>
+                            <option value="5000-6000">5,000円〜6,000円</option>
+                            <option value="6000-7000">6,000円〜7,000円</option>
+                            <option value="7000-8000">7,000円〜8,000円</option>
+                            <option value="8000-9000">8,000円〜9,000円</option>
+                            <option value="9000-10000">9,000円〜10,000円</option>
+                            <option value="10000-12000">10,000円〜12,000円</option>
+                            <option value="12000-15000">12,000円〜15,000円</option>
+                            <option value="15000-20000">15,000円〜20,000円</option>
+                            <option value="20000-">20,000円〜</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -264,9 +291,12 @@
     <!---------------- 
         ブランド商品 
     ---------------->
-    <h2>ブランド商品</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>ブランド商品</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -395,9 +425,12 @@
     <!---------------- 
         人気商品 
     ---------------->
-    <h2>人気商品</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>人気商品</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -526,9 +559,12 @@
     <!---------------- 
         今週のNo1コスメ 
     ---------------->
-    <h2>今週のNo1コスメ</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>今週のNo1コスメ</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -657,9 +693,12 @@
     <!---------------- 
         値段別コスメランキング 
     ---------------->
-    <h2>値段別コスメランキング</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>値段別コスメランキング</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -679,7 +718,7 @@
                         <p>ブランド名2</p>
                         <p>商品名2</p>
                         <p class="product-price">¥2,500</p>
-                        <a href="購入サイトURL2" class="btn btn-tag">
+                        <a href="購入サイ��URL2" class="btn btn-tag">
                             <i class="fas fa-shopping-cart"></i>
                             購入サイトへ
                         </a>
@@ -788,9 +827,12 @@
     <!---------------- 
         パーソナルカラー別コスメランキング 
     ---------------->
-    <h2>パーソナルカラー別コスメランキング</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>パーソナルカラー別コスメランキング</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
@@ -919,9 +961,12 @@
     <!---------------- 
         今月の新商品 
     ---------------->
-    <h2>今月の新商品</h2>
     <div class="wrapper">
         <div class="inner">
+            <div class="section-header">
+                <h2>今月の新商品</h2>
+                <a href="#" class="view-all">すべて見る</a>
+            </div>
             <div class="slider js-slick">
                 <div class="slide">
                     <img src="{{ asset('images/merchandise/syouhin1.jpg') }}" alt="商品1">
