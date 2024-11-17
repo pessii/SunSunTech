@@ -1,19 +1,29 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminRegisterController;
 
 use Illuminate\Support\Facades\Route;
 
+/**
+ * トップページ
+ */
 Route::get('/', function () {
     return view('top');
 });
 
+/**
+ * ダッシュボード
+ */
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+/**
+ * プロフィール
+ */
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -40,5 +50,10 @@ Route::group(['prefix' => 'admin'], function () {
             ->name('admin.dashboard');
     });
 });
+
+/**
+ * 商品一覧
+ */
+Route::get('/products/{category?}/{subcategory?}', [ProductController::class, 'index'])->name('products.index');
 
 require __DIR__.'/auth.php';

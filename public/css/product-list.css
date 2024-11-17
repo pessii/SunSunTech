@@ -1,0 +1,47 @@
+.product-wrapper {
+    padding: 20px 10% 20px 10%;
+}
+
+/* -----------------
+パンくずリスト
+----------------- */
+    .product-breadcrumbs {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .product-breadcrumb-link {
+        text-decoration: none;
+        color: #23abdd;
+    }
+    .product-breadcrumb-link:hover {
+        border-bottom: 1px solid #23abdd; 
+    }
+    .product-breadcrumb-name {
+        color: #666;
+    }
+    .product-breadcrumb-separator {
+        border-radius: 12px;
+        font-weight: bold;
+    }
+
+/* -----------------
+コンテンツラッパー
+----------------- */
+    .product-content-wrapper {
+        padding-top: 20px;
+        display: flex;
+    }
+
+/* -----------------
+メインコンテンツ
+----------------- */
+    .product-main {
+        width: 80%;
+    }
+
+/* -----------------
+サイドバー 
+----------------- */
+    .product-side {
+        width: 20%;
+    }
