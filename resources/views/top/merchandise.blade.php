@@ -294,7 +294,31 @@
     <div class="wrapper">
         <div class="inner">
             <div class="section-header">
-                <h2>ブランド商品</h2>
+                <div class="header-left">
+                    <h2>ブランド商品</h2>
+                    <div class="price-filter">
+                        <select name="price_range" class="price-select">
+                            <option value="">ブランドを選択</option>
+                            <option value="louis-vuitton">ルイ・ヴィトン</option>
+                            <option value="chanel">シャネル</option>
+                            <option value="gucci">グッチ</option>
+                            <option value="prada">プラダ</option>
+                            <option value="hermes">エルメス</option>
+                            <option value="dior">ディオール</option>
+                            <option value="saint-laurent">サンローラン</option>
+                            <option value="fendi">フェンディ</option>
+                            <option value="balenciaga">バレンシアガ</option>
+                            <option value="givenchy">ジバンシィ</option>
+                            <option value="versace">ヴェルサーチ</option>
+                            <option value="burberry">バーバリー</option>
+                            <option value="bottega-veneta">ボッテガ・ヴェネタ</option>
+                            <option value="dolce-gabbana">ドルチェ＆ガッバーナ</option>
+                            <option value="miu-miu">ミュウミュウ</option>
+                            <option value="tom-ford">トム・フォード</option>
+                            <option value="coach">コーチ</option>
+                        </select>
+                    </div>
+                </div>
                 <a href="#" class="view-all">すべて見る</a>
             </div>
             <div class="slider js-slick">
@@ -696,7 +720,28 @@
     <div class="wrapper">
         <div class="inner">
             <div class="section-header">
-                <h2>値段別コスメランキング</h2>
+                <div class="header-left">
+                    <h2>値段別コスメランキング</h2>
+                    <div class="price-filter">
+                        <select name="price_range" class="price-select">
+                            <option value="">価格帯を選択</option>
+                            <option value="0-1000">〜1,000円</option>
+                            <option value="1000-2000">1,000円〜2,000円</option>
+                            <option value="2000-3000">2,000円〜3,000円</option>
+                            <option value="3000-4000">3,000円〜4,000円</option>
+                            <option value="4000-5000">4,000円〜5,000円</option>
+                            <option value="5000-6000">5,000円〜6,000円</option>
+                            <option value="6000-7000">6,000円〜7,000円</option>
+                            <option value="7000-8000">7,000円〜8,000円</option>
+                            <option value="8000-9000">8,000円〜9,000円</option>
+                            <option value="9000-10000">9,000円〜10,000円</option>
+                            <option value="10000-12000">10,000円〜12,000円</option>
+                            <option value="12000-15000">12,000円〜15,000円</option>
+                            <option value="15000-20000">15,000円〜20,000円</option>
+                            <option value="20000-">20,000円〜</option>
+                        </select>
+                    </div>
+                </div>
                 <a href="#" class="view-all">すべて見る</a>
             </div>
             <div class="slider js-slick">
@@ -830,7 +875,15 @@
     <div class="wrapper">
         <div class="inner">
             <div class="section-header">
-                <h2>パーソナルカラー別コスメランキング</h2>
+                <div class="header-left">
+                    <h2>パーソナルカラー別コスメランキング</h2>
+                    <select name="price_range" class="price-select">
+                        <option value="spring">スプリング（イエベ）</option>
+                        <option value="summer">サマー（ブルベ）</option>
+                        <option value="autumn">オータム（イエベ）</option>
+                        <option value="winter">ウィンター（ブルベ）</option>
+                    </select>
+                </div>
                 <a href="#" class="view-all">すべて見る</a>
             </div>
             <div class="slider js-slick">
