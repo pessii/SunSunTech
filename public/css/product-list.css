@@ -43,5 +43,155 @@
 サイドバー 
 ----------------- */
     .product-side {
+        background-color: #f8f8f8;
         width: 20%;
+        border-radius: 0 0 4px 4px;
+        font-size: 12px;
+    }
+
+    /* 対象商品 */
+    .product-side-content {
+        background-color: #c1c1c1;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px 4px 0 0;
+    }
+    .product-side-content span {
+        font-size: 26px;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+
+    /* キーワード検索 */
+    .product-side-keyword-search {
+        padding: 10px;
+    }
+    .product-side-keyword-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-keyword-search input[type="text"] {
+        padding: 8px;
+        border: 1px solid #eaeaea;
+        border-radius: 4px;
+    }
+    .product-side-keyword-search-input {
+        padding: 7px 0 7px 0;
+    }
+
+    /* 価格 */
+    .product-side-price-search {
+        padding: 10px;
+    }
+    .product-side-price-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-price-search-input input[type="text"] {
+        padding: 8px;
+        border: 1px solid #eaeaea;
+        border-radius: 4px;
+        width: 35%;
+    }
+    .product-side-price-search-input {
+        padding: 7px 0 7px 0;
+    }
+
+    /* セール商品 */
+    .product-side-sale-search {
+        padding: 10px;
+    }
+    .product-side-sale-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-sale-search-checkbox {
+        padding: 7px 0 7px 0;
+    }
+
+    /* アイテム */
+    .product-side-item-search {
+        padding: 10px;
+    }
+    .product-side-item-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-item-search-checkbox {
+        padding: 7px 0 7px 0;
+    }
+
+    /* ブランド */
+    .product-side-brand-search {
+        padding: 10px;
+    }
+    .product-side-brand-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-brand-search-checkbox {
+        padding: 7px 0 7px 0;
+    }
+
+    /* お悩み */
+    .product-side-concern-search {
+        padding: 10px;
+    }
+    .product-side-concern-search-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-concern-search-checkbox {
+        padding: 7px 0 7px 0;
+    }
+
+    /* パーソナルカラー */
+    .product-side-personal-color {
+        padding: 10px;
+    }
+    .product-side-personal-color-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+    .product-side-personal-color-checkbox {
+        padding: 7px 0 7px 0;
+    }
+
+    /* 検索ボタンと検索条件をリセットボタン */
+    .product-side-search-buttons {
+        padding: 10px;
+    }
+    .search-button {
+        background-color: #f0666c;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .reset-button {
+        background-color: #fff;
+        color: #666;
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: 1px solid #666;
+        outline: none;
+        font-size: 1em;
+        cursor: pointer;
     }

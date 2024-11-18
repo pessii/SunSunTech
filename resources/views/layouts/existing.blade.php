@@ -36,5 +36,6 @@
     </footer>
 
     <script src="{{ asset('js/top.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>
