@@ -13,6 +13,8 @@
         </div>
     </div>
 
+    <hr class="custom-hr">
+
     <!-- サイドコンテンツの価格で検索 -->
     <div class="product-side-price-search">
         <div class="product-side-price-search-title">価格</div>
@@ -22,6 +24,8 @@
             <input type="text" id="price-max" name="price_max" placeholder="最大価格" class="price-input" pattern="[0-9]*" inputmode="numeric">
         </div>
     </div>
+
+    <hr class="custom-hr">
 
     <div class="accordion">
         <div class="accordion-container">
@@ -59,6 +63,8 @@
                     </label>
                 </div>
             </div>
+
+            <hr class="custom-hr">
 
             <!-- サイドコンテンツのアイテムをチェックボックスで検索 -->
             <div class="product-side-item-search accordion-item">
@@ -138,6 +144,8 @@
                     </label>
                 </div>
             </div>
+
+            <hr class="custom-hr">
 
             <!-- サイドコンテンツのブランドをチェックボックスで検索 -->
             <div class="product-side-brand-search accordion-item">
@@ -233,6 +241,8 @@
                 </div>
             </div>
 
+            <hr class="custom-hr">
+
             <!-- サイドコンテンツのお悩みから探す -->
             <div class="product-side-concern-search accordion-item">
                 <div class="product-side-concern-search-title accordion-title js-accordion-title">
@@ -312,6 +322,8 @@
                 </div>
             </div>
 
+            <hr class="custom-hr">
+
             <!-- サイドコンテンツのパーソナルカラーを選択 -->
             <div class="product-side-personal-color accordion-item">
                 <div class="product-side-personal-color-title accordion-title js-accordion-title">
@@ -343,6 +355,8 @@
 
         </div>
     </div>
+
+    <hr class="custom-hr">
 
     <!-- 検索ボタンと検索条件をリセットボタン -->
     <div class="product-side-search-buttons">

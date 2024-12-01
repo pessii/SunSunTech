@@ -2,13 +2,13 @@
 サイドコンテンツ
 ----------------- */
 
-.product-wrapper {
-    padding: 20px 10% 20px 10%;
-}
+    .product-wrapper {
+        padding: 20px 10% 20px 10%;
+    }
 
-/* -----------------
-パンくずリスト
------------------ */
+    /* -----------------
+    パンくずリスト
+    ----------------- */
     .product-breadcrumbs {
         font-size: 13px;
         padding-bottom: 20px;
@@ -28,24 +28,24 @@
         font-weight: bold;
     }
 
-/* -----------------
-コンテンツラッパー
------------------ */
+    /* -----------------
+    コンテンツラッパー
+    ----------------- */
     .product-content-wrapper {
         padding-top: 20px;
         display: flex;
     }
 
-/* -----------------
-メインコンテンツ
------------------ */
+    /* -----------------
+    メインコンテンツ
+    ----------------- */
     .product-main {
         width: 80%;
     }
 
-/* -----------------
-サイドバー 
------------------ */
+    /* -----------------
+    サイドバー 
+    ----------------- */
     .product-side {
         background-color: #f8f8f8;
         width: 20%;
@@ -107,7 +107,7 @@
 
     /* セール商品 */
     .product-side-sale-search {
-        padding: 10px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
     .product-side-sale-search-title {
         font-size: 17px;
@@ -121,7 +121,7 @@
 
     /* アイテム */
     .product-side-item-search {
-        padding: 10px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
     .product-side-item-search-title {
         font-size: 17px;
@@ -135,7 +135,7 @@
 
     /* ブランド */
     .product-side-brand-search {
-        padding: 10px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
     .product-side-brand-search-title {
         font-size: 17px;
@@ -149,7 +149,7 @@
 
     /* お悩み */
     .product-side-concern-search {
-        padding: 10px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
     .product-side-concern-search-title {
         font-size: 17px;
@@ -163,7 +163,7 @@
 
     /* パーソナルカラー */
     .product-side-personal-color {
-        padding: 10px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
     .product-side-personal-color-title {
         font-size: 17px;
@@ -300,3 +300,103 @@
 /* -----------------
 メインコンテンツ
 ----------------- */
+.custom-hr {
+    border-top: 0.1px solid rgba(45, 45, 45, 5%); /* 必要に応じて上下の余白を調整 */
+}
+    .product-main {
+        padding-left: 40px;
+    }
+
+    /* -----------------
+    メインコタイトル
+    ----------------- */
+    .product-main-title {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: #2d2d2d;
+    }
+    /* タイトルの説明 */
+    .product-main-explanation {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #a0a0a0;
+    }
+
+    /* -----------------
+    商品一覧
+    ----------------- */
+    .product-l-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+        column-gap: 5%;  /* 横方向の隙間のみ指定 */
+        row-gap: 0;      /* 縦方向の隙間を0に */
+    }
+    .product-card {
+        background-color: #fff;
+        color: #212121;
+        text-decoration: none;
+        padding-bottom: 30px;
+    }
+    .product-card-title {
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+    .product-card-thumbnail {
+        margin: 0;
+        order: 0;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+    .product-card-image {
+        height: 270px;
+        width: 220px;
+    }
+
+    .product-card-text {
+        font-size: 14px;
+    }
+    .product-card-text + .product-card-text {
+        margin-top: .5rem;
+    }
+    .product-card-text.-number {
+        color: #f0666c;
+        font-weight: bold;
+        font-size: 18px !important;
+    }
+    .button {
+        display: inline-block;
+        text-decoration: none;
+        transition: background-color .3s ease-in-out;
+    }
+    .button.-compact {
+        padding: .5rem 1rem;
+        border-radius: .25rem;
+        background-color: #f0666c;
+        color: #fff;
+        font-weight: bold;
+    }
+    .button.-compact:hover,
+    .button.-compact:focus {
+        background-color: #80cbc4;
+    }
+
+    .product-sort-select {
+        padding: 8px 16px;
+        border: 1px solid #fff;  /* 枠線を白に変更 */
+        border-radius: 4px;
+        background-color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    /* フォーカス時の枠線も白に保つ場合 */
+    .product-sort-select:focus {
+        outline: none;
+        border-color: #fff;
+    }
+    /* ホバー時も枠線を白に保つ場合 */
+    .product-sort-select:hover {
+        border-color: #fff;
+    }

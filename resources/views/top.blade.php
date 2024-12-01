@@ -4,7 +4,7 @@
     <!-- スライドショー -->
     @include('top.slider')
 
-    <article>
+    <article class="top-article">
 
         <!-- 商品一覧 -->
         <div class="main">

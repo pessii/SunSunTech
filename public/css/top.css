@@ -358,7 +358,7 @@ header {
     .main {
         width: 80%;
     }
-    article {
+    .top-article {
         background: #f6f6f6;
         padding: 20px 10% 20px 10%;
         display: flex; /*サイドバーとメインコンテンツを横並びにする*/

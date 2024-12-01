@@ -18,13 +18,7 @@
             @include('list.each.side-content')
 
             <!-- メインコンテンツ -->
-            <div class="product-main">
-                @foreach($breadcrumbs as $index => $breadcrumb)
-                    @if(!$breadcrumb['url'])
-                        <div class="product-main-title">{{ $breadcrumb['name'] }}</div>
-                    @endif
-                @endforeach
-            </div>
+            @include('list.each.main-content', ['breadcrumbs' => $breadcrumbs])
 
         </div>
 
