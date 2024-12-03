@@ -31,7 +31,7 @@ class IndexUseCase
         if (!$category && !$subcategory) {
             $breadcrumbs = [
                 ['name' => 'コスメナビ', 'url' => '/'],
-                ['name' => 'カテゴリ', 'url' => null]
+                ['name' => 'カテゴリー', 'url' => null]
             ];
         }
 
@@ -39,7 +39,7 @@ class IndexUseCase
         if ($category && !$subcategory) {
             $breadcrumbs = [
                 ['name' => 'コスメナビ', 'url' => '/'],
-                ['name' => 'カテゴリ', 'url' => route('products.index')],
+                ['name' => 'カテゴリー', 'url' => route('products.index')],
                 ['name' => $category, 'url' => null]
             ];
         }
@@ -48,7 +48,7 @@ class IndexUseCase
         if ($category && $subcategory) {
             $breadcrumbs = [
                 ['name' => 'コスメナビ', 'url' => '/'],
-                ['name' => 'カテゴリ', 'url' => route('products.index')],
+                ['name' => 'カテゴリー', 'url' => route('products.index')],
                 ['name' => $category, 'url' => route('products.index', ['category' => $category])],
                 ['name' => $subcategory, 'url' => null]
             ];
