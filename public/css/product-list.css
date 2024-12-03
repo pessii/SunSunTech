@@ -47,10 +47,13 @@
     サイドバー 
     ----------------- */
     .product-side {
-        background-color: #f8f8f8;
         width: 20%;
-        border-radius: 0 0 4px 4px;
         font-size: 12px;
+    }
+
+    .product-side-container {
+        background-color: #f8f8f8;
+        border-radius: 0 0 4px 4px;
     }
 
     /* 対象商品 */
