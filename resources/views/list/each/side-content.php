@@ -8,22 +8,46 @@
 
         <!-- サイドコンテンツのキーワード検索 -->
         <div class="product-side-keyword-search">
+
             <div class="product-side-keyword-search-title">キーワード検索</div>
             <div class="product-side-keyword-search-input">
-                <input type="text" name="keyword" placeholder="キーワードを入力">
+                <input class="product-side-keyword-search-input-text" type="text" name="keyword" placeholder="キーワードを入力">
             </div>
+
+            <!-- OKボタンとクリアボタン -->
+            <div class="product-side-search-buttons">
+                <button type="submit" class="search-button">
+                    OK
+                </button>
+                <button type="button" class="reset-button" id="reset-search">
+                    クリア
+                </button>
+            </div>
+
         </div>
 
         <hr class="custom-hr">
 
         <!-- サイドコンテンツの価格で検索 -->
         <div class="product-side-price-search">
+
             <div class="product-side-price-search-title">価格</div>
             <div class="product-side-price-search-input">
                 <input type="text" id="price-min" name="price_min" placeholder="最小価格" class="price-input" pattern="[0-9]*" inputmode="numeric">
                 <span class="price-separator">〜</span>
                 <input type="text" id="price-max" name="price_max" placeholder="最大価格" class="price-input" pattern="[0-9]*" inputmode="numeric">
             </div>
+
+            <!-- OKボタンとクリアボタン -->
+            <div class="product-side-search-buttons">
+                <button type="submit" class="search-button">
+                    OK
+                </button>
+                <button type="button" class="reset-button" id="reset-search">
+                    クリア
+                </button>
+            </div>
+
         </div>
 
         <hr class="custom-hr">
@@ -33,6 +57,7 @@
 
                 <!-- サイドコンテンツのセール商品で検索 -->
                 <div class="product-side-sale-search accordion-item">
+
                     <div class="product-side-sale-search-title accordion-title js-accordion-title">
                         セール商品
                     </div>
@@ -63,12 +88,24 @@
                             <span class="ECM_CheckboxInput-LabelText">70%OFF以上</span>
                         </label>
                     </div>
+
+                    <!-- OKボタンとクリアボタン -->
+                    <div class="product-side-search-buttons">
+                        <button type="submit" class="search-button">
+                            OK
+                        </button>
+                        <button type="button" class="reset-button" id="reset-search">
+                            クリア
+                        </button>
+                    </div>
+
                 </div>
 
                 <hr class="custom-hr">
 
                 <!-- サイドコンテンツのアイテムをチェックボックスで検索 -->
                 <div class="product-side-item-search accordion-item">
+
                     <div class="product-side-item-search-title accordion-title js-accordion-title">
                         アイテム
                     </div>
@@ -144,12 +181,24 @@
                             <span class="ECM_CheckboxInput-LabelText">その他スキンケア</span>
                         </label>
                     </div>
+
+                    <!-- OKボタンとクリアボタン -->
+                    <div class="product-side-search-buttons">
+                        <button type="submit" class="search-button">
+                            OK
+                        </button>
+                        <button type="button" class="reset-button" id="reset-search">
+                            クリア
+                        </button>
+                    </div>
+
                 </div>
 
                 <hr class="custom-hr">
 
                 <!-- サイドコンテンツのブランドをチェックボックスで検索 -->
                 <div class="product-side-brand-search accordion-item">
+
                     <div class="product-side-brand-search-title accordion-title js-accordion-title">
                         ブランド
                     </div>
@@ -240,12 +289,24 @@
                             <span class="ECM_CheckboxInput-LabelText">コーチ</span>
                         </label>
                     </div>
+
+                    <!-- OKボタンとクリアボタン -->
+                    <div class="product-side-search-buttons">
+                        <button type="submit" class="search-button">
+                            OK
+                        </button>
+                        <button type="button" class="reset-button" id="reset-search">
+                            クリア
+                        </button>
+                    </div>
+
                 </div>
 
                 <hr class="custom-hr">
 
                 <!-- サイドコンテンツのお悩みから探す -->
                 <div class="product-side-concern-search accordion-item">
+
                     <div class="product-side-concern-search-title accordion-title js-accordion-title">
                         お悩み
                     </div>
@@ -321,12 +382,24 @@
                             <span class="ECM_CheckboxInput-LabelText">目のクマ</span>
                         </label>
                     </div>
+
+                    <!-- OKボタンとクリアボタン -->
+                    <div class="product-side-search-buttons">
+                        <button type="submit" class="search-button">
+                            OK
+                        </button>
+                        <button type="button" class="reset-button" id="reset-search">
+                            クリア
+                        </button>
+                    </div>
+
                 </div>
 
                 <hr class="custom-hr">
 
                 <!-- サイドコンテンツのパーソナルカラーを選択 -->
                 <div class="product-side-personal-color accordion-item">
+
                     <div class="product-side-personal-color-title accordion-title js-accordion-title">
                         パーソナルカラー
                     </div>
@@ -352,21 +425,20 @@
                             <span class="ECM_CheckboxInput-LabelText">ウィンター（ブルベ）</span>
                         </label>
                     </div>
+
+                    <!-- OKボタンとクリアボタン -->
+                    <div class="product-side-search-buttons">
+                        <button type="submit" class="search-button">
+                            OK
+                        </button>
+                        <button type="button" class="reset-button" id="reset-search">
+                            クリア
+                        </button>
+                    </div>
+
                 </div>
 
             </div>
-        </div>
-
-        <hr class="custom-hr">
-
-        <!-- 検索ボタンと検索条件をリセットボタン -->
-        <div class="product-side-search-buttons">
-            <button type="submit" class="search-button">
-                検索する
-            </button>
-            <button type="button" class="reset-button" id="reset-search">
-                条件をリセット
-            </button>
         </div>
 
     </div>

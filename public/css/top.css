@@ -368,6 +368,14 @@ header {
         height: auto;
     }
 
+    .sub {
+        box-sizing: border-box;
+    }
+    .sub .box{
+        position: sticky;
+        top: 90px;
+    }
+
 /* -----------------
 商品一覧
 ----------------- */

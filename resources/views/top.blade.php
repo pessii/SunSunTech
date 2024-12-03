@@ -12,7 +12,7 @@
         </div>
 
         <!-- 再度バー -->
-        <div class="side">
+        <div class="side sub">
             @include('top.side')
         </div> 
 
